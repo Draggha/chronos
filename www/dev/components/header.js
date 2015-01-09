@@ -1,5 +1,8 @@
 var m = require('mithril.elements');
 
+// register elements
+require('./login');
+
 var header = m.element('draggha-header', {
    view: function (ctrl) {
       return m('.jumbotron', [
@@ -20,7 +23,8 @@ var header = m.element('draggha-header', {
                   config: m.route
                }, 'Journal')
             ])
-         ])
+         ]),
+         m('draggha-login')
       ]);
    }
 });
