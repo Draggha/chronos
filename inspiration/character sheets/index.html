@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" href="resources/css/WoDCC.css" type="text/css" />
+<script src="resources/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="resources/js/WoDCC.js" type="text/javascript"></script>
+<!-- <script src="resources/rules/WoDCC_rules_WoD.js" type="text/javascript"></script> -->
+
+<title>WoD CC</title>
+</head>
+<body>
+	<a href="/test.html">to test</a>
+	<div class="content">
+		
+		<div id="feedback" class="feedback"></div>
+
+		<ul class="tab-box clr">
+<li id="tabAttr" class="liTab">
+	<a class="tab" href="#tabAttr">Attributes</a>
+	<div class="tab-content">
+		<div class="attributes">
+			<!-- MENTAL ATTRIBUTES -->
+			<div class="blockthreefold borderR">
+				<h2 class="subheadline">Mental</h2>
+				<div class="attrInt">
+					<label class="lblAttr">Intelligence</label>
+					<ul id="attrInt" class="attrlist">
+						<li id="attrInt1" class="attr"></li>
+						<li id="attrInt2" class="attr"></li>
+						<li id="attrInt3" class="attr"></li>
+						<li id="attrInt4" class="attr"></li>
+						<li id="attrInt5" class="attr"></li>
+					</ul>
+				</div>
+				<div class="attrWit">
+					<label class="lblAttr">Wits</label>
+					<ul id="attrWit" class="attrlist">
+						<li id="attrWit1" class="attr"></li>
+						<li id="attrWit2" class="attr"></li>
+						<li id="attrWit3" class="attr"></li>
+						<li id="attrWit4" class="attr"></li>
+						<li id="attrWit5" class="attr"></li>
+					</ul>
+				</div>
+				<div class="attrRes">
+					<label class="lblAttr">Resolve</label>
+					<ul id="attrRes" class="attrlist">
+						<li id="attrRes1" class="attr"></li>
+						<li id="attrRes2" class="attr"></li>
+						<li id="attrRes3" class="attr"></li>
+						<li id="attrRes4" class="attr"></li>
+						<li id="attrRes5" class="attr"></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- PHYSICAL ATTRIBUTES -->
+			<div class="blockthreefold borderR">
+				<h2 class="subheadline">Physical</h2>
+				<div class="attrStr">
+					<label class="lblAttr">Strength</label>
+					<ul id="attrStr" class="attrlist">
+						<li id="attrStr1" class="attr"></li>
+						<li id="attrStr2" class="attr"></li>
+						<li id="attrStr3" class="attr"></li>
+						<li id="attrStr4" class="attr"></li>
+						<li id="attrStr5" class="attr"></li>
+					</ul>
+				</div>
+				<div class="attrDex">
+					<label class="lblAttr">Dexterity</label>
+					<ul id="attrDex" class="attrlist">
+						<li id="attrDex1" class="attr"></li>
+						<li id="attrDex2" class="attr"></li>
+						<li id="attrDex3" class="attr"></li>
+						<li id="attrDex4" class="attr"></li>
+						<li id="attrDex5" class="attr"></li>
+					</ul>
+				</div>
+				<div class="attrSta">
+					<label class="lblAttr">Stamina</label>
+					<ul id="attrSta" class="attrlist">
+						<li id="attrSta1" class="attr"></li>
+						<li id="attrSta2" class="attr"></li>
+						<li id="attrSta3" class="attr"></li>
+						<li id="attrSta4" class="attr"></li>
+						<li id="attrSta5" class="attr"></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- SOCIAL ATTRIBUTES -->
+			<div class="blockthreefold">
+				<h2 class="subheadline">Social</h2>
+				<div class="attrPre">
+					<label class="lblAttr">Presence</label>
+					<ul id="attrPre" class="attrlist">
+						<li id="attrPre1" class="attr"></li>
+						<li id="attrPre2" class="attr"></li>
+						<li id="attrPre3" class="attr"></li>
+						<li id="attrPre4" class="attr"></li>
+						<li id="attrPre5" class="attr"></li>
+					</ul>
+				</div>
+				<div class="attrMan">
+					<label class="lblAttr">Manipulation</label>
+					<ul id="attrMan" class="attrlist">
+						<li id="attrMan1" class="attr"></li>
+						<li id="attrMan2" class="attr"></li>
+						<li id="attrMan3" class="attr"></li>
+						<li id="attrMan4" class="attr"></li>
+						<li id="attrMan5" class="attr"></li>
+					</ul>
+				</div>
+				<div class="attrCom">
+					<label class="lblAttr">Composure</label>
+					<ul id="attrCom" class="attrlist">
+						<li id="attrCom1" class="attr"></li>
+						<li id="attrCom2" class="attr"></li>
+						<li id="attrCom3" class="attr"></li>
+						<li id="attrCom4" class="attr"></li>
+						<li id="attrCom5" class="attr"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+<li id="tabSk" class="liTab">
+	<a class="tab" href="#tabSk">Skills</a>
+	<div class="tab-content">
+		<div class="skills">
+			<!-- MENTAL SKILLS -->
+			<div class="blockthreefold borderR">
+				<h2 class="subheadline">Mental</h2>
+				<div class="skAca">
+					<label class="lblSkill">Academics</label>
+					<ul id="skAca" class="sklist">
+						<li id="skAca1" class="sk"></li>
+						<li id="skAca2" class="sk"></li>
+						<li id="skAca3" class="sk"></li>
+						<li id="skAca4" class="sk"></li>
+						<li id="skAca5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skCom">
+					<label class="lblSkill">Computer</label>
+					<ul id="skCom" class="sklist">
+						<li id="skCom1" class="sk"></li>
+						<li id="skCom2" class="sk"></li>
+						<li id="skCom3" class="sk"></li>
+						<li id="skCom4" class="sk"></li>
+						<li id="skCom5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skCra">
+					<label class="lblSkill">Crafts</label>
+					<ul id="skCra" class="sklist">
+						<li id="skCra1" class="sk"></li>
+						<li id="skCra2" class="sk"></li>
+						<li id="skCra3" class="sk"></li>
+						<li id="skCra4" class="sk"></li>
+						<li id="skCra5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skInv">
+					<label class="lblSkill">Investigation</label>
+					<ul id="skInv" class="sklist">
+						<li id="skInv1" class="sk"></li>
+						<li id="skInv2" class="sk"></li>
+						<li id="skInv3" class="sk"></li>
+						<li id="skInv4" class="sk"></li>
+						<li id="skInv5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skMed">
+					<label class="lblSkill">Medicine</label>
+					<ul id="skMed" class="sklist">
+						<li id="skMed1" class="sk"></li>
+						<li id="skMed2" class="sk"></li>
+						<li id="skMed3" class="sk"></li>
+						<li id="skMed4" class="sk"></li>
+						<li id="skMed5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skOcc">
+					<label class="lblSkill">Occult</label>
+					<ul id="skOcc" class="sklist">
+						<li id="skOcc1" class="sk"></li>
+						<li id="skOcc2" class="sk"></li>
+						<li id="skOcc3" class="sk"></li>
+						<li id="skOcc4" class="sk"></li>
+						<li id="skOcc5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skPol">
+					<label class="lblSkill">Politics</label>
+					<ul id="skPol" class="sklist">
+						<li id="skPol1" class="sk"></li>
+						<li id="skPol2" class="sk"></li>
+						<li id="skPol3" class="sk"></li>
+						<li id="skPol4" class="sk"></li>
+						<li id="skPol5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skSci">
+					<label class="lblSkill">Science</label>
+					<ul id="skSci" class="sklist">
+						<li id="skSci1" class="sk"></li>
+						<li id="skSci2" class="sk"></li>
+						<li id="skSci3" class="sk"></li>
+						<li id="skSci4" class="sk"></li>
+						<li id="skSci5" class="sk"></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- PHYSICAL SKILLS -->
+			<div class="blockthreefold borderR">
+				<h2 class="subheadline">Physical</h2>
+				<div class="skAth">
+					<label class="lblSkill">Athletics</label>
+					<ul id="skAth" class="sklist">
+						<li id="skAth1" class="sk"></li>
+						<li id="skAth2" class="sk"></li>
+						<li id="skAth3" class="sk"></li>
+						<li id="skAth4" class="sk"></li>
+						<li id="skAth5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skBra">
+					<label class="lblSkill">Brawl</label>
+					<ul id="skBra" class="sklist">
+						<li id="skBra1" class="sk"></li>
+						<li id="skBra2" class="sk"></li>
+						<li id="skBra3" class="sk"></li>
+						<li id="skBra4" class="sk"></li>
+						<li id="skBra5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skDri">
+					<label class="lblSkill">Drive</label>
+					<ul id="skDri" class="sklist">
+						<li id="skDri1" class="sk"></li>
+						<li id="skDri2" class="sk"></li>
+						<li id="skDri3" class="sk"></li>
+						<li id="skDri4" class="sk"></li>
+						<li id="skDri5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skFir">
+					<label class="lblSkill">Firearms</label>
+					<ul id="skFir" class="sklist">
+						<li id="skFir1" class="sk"></li>
+						<li id="skFir2" class="sk"></li>
+						<li id="skFir3" class="sk"></li>
+						<li id="skFir4" class="sk"></li>
+						<li id="skFir5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skLar">
+					<label class="lblSkill">Larceny</label>
+					<ul id="skLar" class="sklist">
+						<li id="skLar1" class="sk"></li>
+						<li id="skLar2" class="sk"></li>
+						<li id="skLar3" class="sk"></li>
+						<li id="skLar4" class="sk"></li>
+						<li id="skLar5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skSte">
+					<label class="lblSkill">Stealth</label>
+					<ul id="skSte" class="sklist">
+						<li id="skSte1" class="sk"></li>
+						<li id="skSte2" class="sk"></li>
+						<li id="skSte3" class="sk"></li>
+						<li id="skSte4" class="sk"></li>
+						<li id="skSte5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skSur">
+					<label class="lblSkill">Survival</label>
+					<ul id="skSur" class="sklist">
+						<li id="skSur1" class="sk"></li>
+						<li id="skSur2" class="sk"></li>
+						<li id="skSur3" class="sk"></li>
+						<li id="skSur4" class="sk"></li>
+						<li id="skSur5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skWea">
+					<label class="lblSkill">Weaponry</label>
+					<ul id="skWea" class="sklist">
+						<li id="skWea1" class="sk"></li>
+						<li id="skWea2" class="sk"></li>
+						<li id="skWea3" class="sk"></li>
+						<li id="skWea4" class="sk"></li>
+						<li id="skWea5" class="sk"></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- SOCIAL SKILLS -->
+			<div class="blockthreefold">
+				<h2 class="subheadline">Social</h2>
+				<div class="skAK">
+					<label class="lblSkill">Animal Ken</label>
+					<ul id="skAK" class="sklist">
+						<li id="skAK1" class="sk"></li>
+						<li id="skAK2" class="sk"></li>
+						<li id="skAK3" class="sk"></li>
+						<li id="skAK4" class="sk"></li>
+						<li id="skAK5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skEmp">
+					<label class="lblSkill">Empathy</label>
+					<ul id="skEmp" class="sklist">
+						<li id="skEmp1" class="sk"></li>
+						<li id="skEmp2" class="sk"></li>
+						<li id="skEmp3" class="sk"></li>
+						<li id="skEmp4" class="sk"></li>
+						<li id="skEmp5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skExp">
+					<label class="lblSkill">Expression</label>
+					<ul id="skExp" class="sklist">
+						<li id="skExp1" class="sk"></li>
+						<li id="skExp2" class="sk"></li>
+						<li id="skExp3" class="sk"></li>
+						<li id="skExp4" class="sk"></li>
+						<li id="skExp5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skInt">
+					<label class="lblSkill">Intimidation</label>
+					<ul id="skInt" class="sklist">
+						<li id="skInt1" class="sk"></li>
+						<li id="skInt2" class="sk"></li>
+						<li id="skInt3" class="sk"></li>
+						<li id="skInt4" class="sk"></li>
+						<li id="skInt5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skPer">
+					<label class="lblSkill">Persuasion</label>
+					<ul id="skPer" class="sklist">
+						<li id="skPer1" class="sk"></li>
+						<li id="skPer2" class="sk"></li>
+						<li id="skPer3" class="sk"></li>
+						<li id="skPer4" class="sk"></li>
+						<li id="skPer5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skSoc">
+					<label class="lblSkill">Socialize</label>
+					<ul id="skSoc" class="sklist">
+						<li id="skSoc1" class="sk"></li>
+						<li id="skSoc2" class="sk"></li>
+						<li id="skSoc3" class="sk"></li>
+						<li id="skSoc4" class="sk"></li>
+						<li id="skSoc5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skStr">
+					<label class="lblSkill">Streetwise</label>
+					<ul id="skStr" class="sklist">
+						<li id="skStr1" class="sk"></li>
+						<li id="skStr2" class="sk"></li>
+						<li id="skStr3" class="sk"></li>
+						<li id="skStr4" class="sk"></li>
+						<li id="skStr5" class="sk"></li>
+					</ul>
+				</div>
+				<div class="skSub">
+					<label class="lblSkill">Subterfuge</label>
+					<ul id="skSub" class="sklist">
+						<li id="skSub1" class="sk"></li>
+						<li id="skSub2" class="sk"></li>
+						<li id="skSub3" class="sk"></li>
+						<li id="skSub4" class="sk"></li>
+						<li id="skSub5" class="sk"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+<li id="tabInfos" class="liTab">
+	<a class="tab" href="#tabInfos">Informations</a>
+		<div class="tab-content">
+			<div class="text">
+				<!-- INFOS -->
+				<div class="blocktwofold borderR">
+					<h2 class="subheadline">Character</h2>
+					<div>
+						<label class="lblText">Name</label>
+						<input type="text" id="txt1" class="txtField" />
+					</div>
+					<div>
+						<label class="lblText">Alias</label>
+						<input type="text" id="txt2" class="txtField" />
+					</div>
+					<div>
+						<label class="lblText">Test</label>
+						<input type="text" id="txt3" class="txtField" />
+					</div>
+				</div>
+
+				<!-- PORTRAIT -->
+				<div class="blocktwofold">
+					<h2 class="subheadline">Test</h2>
+					<div>
+						<label if="lblPortrait" class="lblText">Test</label>
+						<input type="text" id="txtPortrait" class="txtField" />
+					</div>
+					<img id="imgPortrait" src="" alt="">
+				</div>
+			</div>
+		</div>
+	</a>
+</li>
+<li id="tabMF" class="liTab">
+	<a class="tab" href="#tabMF">Merits/Flaws</a>
+		<div class="tab-content">
+			<div class="meritsNflaws">
+				<div class="merits">					
+					<h2 class="subheadline">Merits</h2>
+					<div class="blocktwofold borderR">
+						<select id="merits" class="selBox lt" name="Merits" size="3" multiple>
+							<option>Merit 1</option>
+							<option>Merit 2</option>
+							<option>Merit 3</option>
+						</select>
+
+						<p class="roundbutton rt">&gt;</p>
+					</div>
+					<div class="blocktwofold">
+						<p class="roundbutton lt">&lt;</p>
+
+						<select id="meritschosen" class="selBox rt" name="MeritsChosen" size="3" multiple>
+							
+						</select>
+					</div>
+				</div>
+				<div class="flaws">
+					<h2 class="subheadline">Flaws</h2>
+					<div class="blocktwofold borderR">
+						<select class="selBox lt" name="Flaws" size="3" multiple>
+							<option>Flaw 1</option>
+							<option>Flaw 2</option>
+							<option>Flaw 3</option>
+						</select>
+
+						<p class="roundbutton rt">&gt;</p>
+					</div>
+					<div class="blocktwofold">
+						<p class="roundbutton lt">&lt;</p>
+						
+						<select class="selBox rt" name="FlawsChosen" size="3" multiple>
+							
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</li>
+<li id="tabLS" class="liTab">
+	<a class="tab" href="#tabLS">Load/Save</a>
+		<div class="tab-content">
+			<div class="saveData">
+				<div id="saveData" class="customBtn">save</div>
+				<div id="loadData" class="customBtn">load</div>
+				<textarea id="datafield"></textarea>
+			</div>
+		</div>
+	</a>
+</li>
+		</div>
+		</ul>
+		
+	</div>
+</body>
+</html>
