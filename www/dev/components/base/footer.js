@@ -1,6 +1,6 @@
 var m = require('mithril.elements');
 
-var footer = m.element('draggha-footer', {
+var footer = m.element('base/footer', {
    view: function (ctrl) {
       return m('footer', [
          m('p', [

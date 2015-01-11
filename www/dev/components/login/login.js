@@ -152,7 +152,7 @@ function modifyDOM() {
    });
 }
 
-var login = m.element('draggha-login', {
+var login = m.element('login/login', {
    view: function (ctrl) {
       return m('.hoodie-accountbar', {
          config: modifyDOM

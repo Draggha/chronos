@@ -1,9 +1,9 @@
 var m = require('mithril.elements');
 
 // register elements
-require('./login');
+require('../login/login');
 
-var header = m.element('draggha-header', {
+var header = m.element('base/header', {
    view: function (ctrl) {
       return m('.jumbotron', [
          m('h1', 'Chronos'),
@@ -24,7 +24,7 @@ var header = m.element('draggha-header', {
                }, 'Journal')
             ])
          ]),
-         m('draggha-login')
+         m('login/login')
       ]);
    }
 });

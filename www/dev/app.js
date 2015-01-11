@@ -1,8 +1,8 @@
 var m = require('mithril.elements');
 
 // base components
-require('./components/header');
-require('./components/footer');
+require('./components/base/header');
+require('./components/base/footer');
 
 // pages
 require('./pages/index');
@@ -16,9 +16,9 @@ function app(element) {
          controller: function () {},
          view: function () {
             return m('.container.main-content', [
-               m('draggha-header'),
+               m('base/header'),
                m(page),
-               m('draggha-footer')
+               m('base/footer')
             ]);
          }
       };

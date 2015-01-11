@@ -1,7 +1,7 @@
 var m = require('mithril.elements');
 
 // register all needed components
-require('../components/texteditor');
+require('../components/journal/editor');
 
 var journal = m.element('pages/journal', {
    controller: function () {
@@ -16,7 +16,7 @@ var journal = m.element('pages/journal', {
          m('h1', 'Welcome to the chronicle "' + ctrl.chronicle + '"'),
          m('.row', [
             m('.col-md-12', [
-               m('draggha-texteditor')
+               m('journal/editor')
             ])
          ])
       ];
