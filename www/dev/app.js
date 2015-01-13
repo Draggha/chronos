@@ -7,8 +7,9 @@ require('./components/base/footer');
 // pages
 require('./pages/index');
 require('./pages/403');
-require('./pages/test');
+require('./pages/login');
 require('./pages/journal');
+require('./pages/create-chronicle');
 
 function app(element) {
    function addHeaderAndFooter(page) {
@@ -26,7 +27,8 @@ function app(element) {
 
    return m.route(element, "/", {
       "/": addHeaderAndFooter('pages/index'),
-      "/test": addHeaderAndFooter('pages/test'),
+      "/login": addHeaderAndFooter('pages/login'),
+      "/create-chronicle": addHeaderAndFooter('pages/create-chronicle'),
       "/journal/:chronicle": addHeaderAndFooter('pages/journal'),
 
       "/403": addHeaderAndFooter('pages/403')
