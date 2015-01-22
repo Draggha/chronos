@@ -1,0 +1,13 @@
+{
+	"source": {
+		"include": ["web/js"],
+		"exclude": ["web/js/libs.js"],
+		"includePattern": ".+\\.js(doc)?$",
+		"excludePattern": "(^|\\/|\\\\)_"
+	},
+	"opts": {
+		"encoding": "utf8",
+		"destination": "./jsdoc/",
+		"recurse": true
+	}
+}

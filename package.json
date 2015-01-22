@@ -1,23 +1,58 @@
 {
   "name": "chronos",
-  "version": "3.0.0",
+  "description": "## Installation",
+  "author": "Johann Haaf",
+  "license": "MIT",
+  "private": true,
+  "version": "0.0.1",
   "type": "app",
+  "scripts": {
+    "start": "node node_modules/hoodie-server/bin/start",
+    "dev": "node_modules/.bin/grunt",
+    "build": "node_modules/.bin/grunt prod",
+    "test": "node_modules/.bin/grunt test:unit",
+    "test:ui": "node_modules/.bin/grunt test:ui"
+  },
   "dependencies": {
-    "hoodie-server": "^2.0.0",
     "hoodie-plugin-appconfig": "^2.0.1",
     "hoodie-plugin-email": "^1.0.0",
-    "hoodie-plugin-users": "^2.1.0"
+    "hoodie-plugin-users": "^2.1.0",
+    "hoodie-server": "^2.0.0",
+    "mithril": "^0.1.28",
+    "mithril.elements": "^0.1.2"
   },
-  "files": [
-    "www/",
-    "jspm_packages/",
-    "src/"
-  ],
+  "devDependencies": {
+    "broccoli-6to5-transpiler": "^2.0.4",
+    "broccoli-concat": "0.0.11",
+    "broccoli-file-remover": "^0.2.3",
+    "broccoli-htmlmin": "^1.1.0",
+    "broccoli-jscs": "0.0.12",
+    "broccoli-less-single": "^0.1.4",
+    "broccoli-merge-trees": "^0.1.4",
+    "broccoli-static-compiler": "^0.1.4",
+    "broccoli-traceur": "^0.10.0",
+    "broccoli-uglify-js": "^0.1.3",
+    "broccoli-webpack": "^0.1.1",
+    "grunt": "^0.4.5",
+    "grunt-broccoli": "^0.3.6",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-exec": "^0.4.6",
+    "grunt-karma": "^0.9.0",
+    "grunt-nightwatch": "^0.3.0",
+    "grunt-shell": "^1.1.1",
+    "jsdoc": "^3.3.0-alpha9",
+    "karma": "^0.12.23",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-ie-launcher": "^0.1.5",
+    "karma-jasmine": "^0.1.5",
+    "karma-script-launcher": "^0.1.0",
+    "source-map-loader": "^0.1.3"
+  },
   "engines": {
     "node": ">=0.10.22"
-  },
-  "scripts": {
-    "start": "node node_modules/hoodie-server/bin/start"
   },
   "hoodie": {
     "plugins": [
@@ -26,65 +61,7 @@
       "hoodie-plugin-users"
     ]
   },
-  "description": "## Installation",
-  "_id": "my-first-hoodie@3.0.0",
-  "dist": {
-    "shasum": "2cff3f5f59e47bc458dd4eb54d68dd6ad52bf4a0",
-    "tarball": "http://registry.npmjs.org/my-first-hoodie/-/my-first-hoodie-3.0.0.tgz"
-  },
-  "_from": "my-first-hoodie@3.0.0",
-  "_npmVersion": "1.3.14",
-  "_npmUser": {
-    "name": "gr2m",
-    "email": "gregor@martynus.net"
-  },
-  "maintainers": [
-    {
-      "name": "svnlto",
-      "email": "me@svenlito.com"
-    },
-    {
-      "name": "caolan",
-      "email": "caolan.mcmahon@gmail.com"
-    },
-    {
-      "name": "gr2m",
-      "email": "gregor@martynus.net"
-    },
-    {
-      "name": "jan",
-      "email": "jan@apache.org"
-    },
-    {
-      "name": "espy",
-      "email": "hello@alexfeyerke.com"
-    },
-    {
-      "name": "boennemann",
-      "email": "stephan@boennemann.me"
-    },
-    {
-      "name": "hoodiebot",
-      "email": "stephan@thehoodiefirm.com"
-    }
-  ],
-  "directories": {
-    "baseURL": "",
-    "lib": "src",
-    "packages": "jspm_packages"
-  },
   "_shasum": "2cff3f5f59e47bc458dd4eb54d68dd6ad52bf4a0",
   "_resolved": "https://registry.npmjs.org/my-first-hoodie/-/my-first-hoodie-3.0.0.tgz",
-  "readme": "ERROR: No README data found!",
-  "jspm": {
-    "directories": {
-      "baseURL": "www",
-      "lib": "dev",
-      "packages": "www/dev/jspm_packages"
-    },
-    "dependencies": {
-      "mithril": "npm:mithril@^0.1.28",
-      "mithril.elements": "npm:mithril.elements@^0.1.1"
-    }
-  }
+  "readme": "README.md"
 }
