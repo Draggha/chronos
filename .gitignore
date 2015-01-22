@@ -1,4 +1,7 @@
 node_modules/
+tmp/
 jspm_packages/
 data/hoodie.pid
 data/couch.pid
+docs/jsdoc/
+www/
