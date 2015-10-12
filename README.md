@@ -1,3 +1,5 @@
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 # Chronos
 A kind of diary.
 
@@ -9,34 +11,28 @@ pen & paper roleplay experiences, but can also be used in many other kinds of wa
 
 The following features will be aspired (suggestions welcome!):
 
-+ O Persist your story
-+ O Bring your story in your own timeline
-+ O Add metadata to your stories, like who was there and what items were important (these will be linked and show a little tooltip teaser)
-+ O Manage a chronicle as a group (with authorization and visibility and/or editing restrictions)
-+ O Add Doodle-like functions so your group can arrange its next meetup without the need to use another platform that just grabs your data.
-+ O Add collaboration functions (multiple users editing the same document, maybe a chat to discourse) so your group can get better at authoring stuff
-+ O Import and Export your data
-+ O Make this app run completely locally and offline (with an option to sync to remote)
++ [ ] Persist your story
++ [ ] Bring your story in your own timeline
++ [ ] Add metadata to your stories, like who was there and what items were important (these will be linked and show a little tooltip teaser)
++ [ ] Manage a chronicle as a group (with authorization and visibility and/or editing restrictions)
++ [ ] Add Doodle-like functions so your group can arrange its next meetup without the need to use another platform that just grabs your data.
++ [ ] Add collaboration functions (multiple users editing the same document, maybe a chat to discourse) so your group can get better at authoring stuff
++ [ ] Import and Export your data
++ [ ] Make this app run completely locally and offline (with an option to sync to remote)
 
-## Prerequesites
+## Prerequisites
 You need the following software:
 
-+ Node.js (or io.js)
-+ Apache CouchDB
-+ Git
-+ [Hoodie](http://www.hood.ie)
-+ [JSPM](http://www.jspm.io)
++ a Git client (duh)
++ [Node.js](http://nodejs.org)
++ [Apache CouchDB](http://couchdb.apache.org/)
++ [Hoodie](http://hood.ie)
++ [JSPM](http://jspm.io)
 
 Then just do the following:
 
 `
-npm install
-`
-
-and
-
-`
-jspm install
+npm install && npm run init
 `
 
 That should be enough to get the development version working.

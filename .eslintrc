@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": [
+    "Hoodie"
+  ],
+  "ignore": [
+    "node_modules/",
+    "www/src/jspm_packages/",
+    "www/config.js",
+    "www/src/js/vendor/"
+  ],
+  "extends": [
+    "standard"
+  ]
+}

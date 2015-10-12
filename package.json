@@ -11,19 +11,28 @@
     "dev": "node_modules/.bin/grunt",
     "build": "node_modules/.bin/grunt prod",
     "test": "node_modules/.bin/grunt test:unit",
-    "test:ui": "node_modules/.bin/grunt test:ui"
+    "test:ui": "node_modules/.bin/grunt test:ui",
+    "init": "jspm install",
+    "lint": "standard --format www/src/js/app/app.js"
   },
   "dependencies": {
     "hoodie-plugin-appconfig": "^2.0.1",
     "hoodie-plugin-email": "^1.0.0",
     "hoodie-plugin-users": "^2.1.0",
-    "hoodie-server": "^2.0.0",
-    "mithril": "^0.1.28",
+    "hoodie-server": "^4.0.3",
+    "mithril": "^0.2.0",
     "mithril.elements": "^0.1.2"
   },
   "devDependencies": {
-    "jspm": "^0.15.6",
-    "jss": "^1.0.8"
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.6.0",
+    "eslint-config-standard": "^4.4.0",
+    "eslint-plugin-standard": "^1.3.1",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.0.3",
+    "jspm": "^0.16.12",
+    "jss": "^2.3.5",
+    "standard": "^5.3.1"
   },
   "engines": {
     "node": ">=0.10.22"
@@ -39,15 +48,31 @@
   "_resolved": "https://registry.npmjs.org/my-first-hoodie/-/my-first-hoodie-3.0.0.tgz",
   "readme": "README.md",
   "jspm": {
-    "directories": {},
+    "directories": {
+      "baseURL": "www",
+      "packages": "www/src/jspm_packages"
+    },
     "dependencies": {
-      "jss": "npm:jss@^1.0.8",
-      "mithril": "npm:mithril@^0.2.0"
+      "jquery": "github:components/jquery@2.1.0",
+      "mithril": "npm:mithril@^0.2.0",
+      "skeleton": "github:dhg/Skeleton@2.0.2"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.1.13",
-      "babel-runtime": "npm:babel-runtime@^5.1.13",
-      "core-js": "npm:core-js@^0.9.4"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "Hoodie"
+    ],
+    "ignore": [
+      "node_modules/",
+      "www/src/jspm_packages/",
+      "www/config.js",
+      "www/src/js/vendor/"
+    ]
   }
 }
