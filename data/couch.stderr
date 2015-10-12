@@ -1,0 +1,13 @@
+/home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: 1: /home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: mdfind: not found
+/home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: 4: cd: can't cd to /Contents/Resources/couchdbx-core
+/home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: 5: /home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: ./bin/couchdb: not found
+/home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: 1: /home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: mdfind: not found
+/home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: 4: cd: can't cd to /Contents/Resources/couchdbx-core
+/home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: 5: /home/jay/projects/node/chronos/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh: ./bin/couchdb: not found
+
+heart_beat_kill_pid = 4954
+heart_beat_timeout = 11
+heart: Wed May  6 20:52:00 2015: Erlang has closed.
+Terminated
+sh: echo: I/O error
+heart: Wed May  6 20:52:01 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.

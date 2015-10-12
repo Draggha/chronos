@@ -1,6 +1,6 @@
 {
   "name": "chronos",
-  "description": "## Installation",
+  "description": "A piece of time.",
   "author": "Johann Haaf",
   "license": "MIT",
   "private": true,
@@ -22,34 +22,8 @@
     "mithril.elements": "^0.1.2"
   },
   "devDependencies": {
-    "broccoli-6to5-transpiler": "^2.0.4",
-    "broccoli-concat": "0.0.11",
-    "broccoli-file-remover": "^0.2.3",
-    "broccoli-htmlmin": "^1.1.0",
-    "broccoli-jscs": "0.0.12",
-    "broccoli-less-single": "^0.1.4",
-    "broccoli-merge-trees": "^0.1.4",
-    "broccoli-static-compiler": "^0.1.4",
-    "broccoli-traceur": "^0.10.0",
-    "broccoli-uglify-js": "^0.1.3",
-    "broccoli-webpack": "^0.1.1",
-    "grunt": "^0.4.5",
-    "grunt-broccoli": "^0.3.6",
-    "grunt-cli": "^0.1.13",
-    "grunt-concurrent": "^1.0.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-exec": "^0.4.6",
-    "grunt-karma": "^0.9.0",
-    "grunt-nightwatch": "^0.3.0",
-    "grunt-shell": "^1.1.1",
-    "jsdoc": "^3.3.0-alpha9",
-    "karma": "^0.12.23",
-    "karma-chrome-launcher": "^0.1.4",
-    "karma-firefox-launcher": "^0.1.3",
-    "karma-ie-launcher": "^0.1.5",
-    "karma-jasmine": "^0.1.5",
-    "karma-script-launcher": "^0.1.0",
-    "source-map-loader": "^0.1.3"
+    "jspm": "^0.15.6",
+    "jss": "^1.0.8"
   },
   "engines": {
     "node": ">=0.10.22"
@@ -63,5 +37,17 @@
   },
   "_shasum": "2cff3f5f59e47bc458dd4eb54d68dd6ad52bf4a0",
   "_resolved": "https://registry.npmjs.org/my-first-hoodie/-/my-first-hoodie-3.0.0.tgz",
-  "readme": "README.md"
+  "readme": "README.md",
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "jss": "npm:jss@^1.0.8",
+      "mithril": "npm:mithril@^0.2.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
 }
