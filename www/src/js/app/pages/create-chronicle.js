@@ -56,9 +56,7 @@ let overwriteChronicleModal = {
         onclick: ctrl.trigger.bind(ctrl, true)
       }, 'Launch demo modal'),
       m.component(modalComponent, {
-        state: {
-          trigger: ctrl.trigger
-        }
+        trigger: ctrl.trigger
       }, function () {
         return {
           title: 'A Modal Title',
@@ -155,7 +153,7 @@ let createChroniclePage = {
           }, 'Find all')
         ])
       ]),
-      m.component(overwriteChronicleModal.instance())
+      m.component(overwriteChronicleModal)
     ])
   }
 }

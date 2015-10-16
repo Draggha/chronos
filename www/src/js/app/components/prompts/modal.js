@@ -35,9 +35,9 @@ let modal = {
     }
   },
 
-  view: function (ctrl, inner) {
+  view: function (ctrl, options, inner) {
     inner = inner()
-    var isOpen = ctrl.state()
+    let isOpen = options.trigger()
     return m((isOpen ? '.is-open' : '.modal.fade'), {
       config: ctrl.bind
     }, [
