@@ -55,7 +55,8 @@
     "dependencies": {
       "jquery": "github:components/jquery@2.1.0",
       "mithril": "npm:mithril@^0.2.0",
-      "skeleton": "github:dhg/Skeleton@2.0.2"
+      "skeleton": "github:dhg/Skeleton@2.0.2",
+      "tinymce": "npm:tinymce@^4.2.6"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
