@@ -12,7 +12,7 @@
     "build": "node_modules/.bin/grunt prod",
     "test": "node_modules/.bin/grunt test:unit",
     "test:ui": "node_modules/.bin/grunt test:ui",
-    "init": "jspm install",
+    "postinstall": "jspm install",
     "lint": "standard --format www/src/js/app/app.js"
   },
   "dependencies": {

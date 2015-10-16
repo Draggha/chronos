@@ -12,13 +12,28 @@ pen & paper roleplay experiences, but can also be used in many other kinds of wa
 The following features will be aspired (suggestions welcome!):
 
 + [ ] Persist your story
+  - CouchDb persistence
+  - Add drafts as well as live versions
++ [ ] Manage a chronicle as a group
+  - with authorization and visibility and/or editing restrictions
 + [ ] Bring your story in your own timeline
-+ [ ] Add metadata to your stories, like who was there and what items were important (these will be linked and show a little tooltip teaser)
-+ [ ] Manage a chronicle as a group (with authorization and visibility and/or editing restrictions)
-+ [ ] Add Doodle-like functions so your group can arrange its next meetup without the need to use another platform that just grabs your data.
-+ [ ] Add collaboration functions (multiple users editing the same document, maybe a chat to discourse) so your group can get better at authoring stuff
-+ [ ] Import and Export your data
-+ [ ] Make this app run completely locally and offline (with an option to sync to remote)
+  - a frontend component for managing events on a time stream
+  - every chronicle has its own independent timeline
++ [ ] Add metadata to your stories, like who was there and what items were important
+  - these will be linked and show a little tooltip teaser
++ [ ] Arrange your groups next meetup without the need to use another platform that just grabs your data.
+  - Add some Doodle-like functions
++ [ ] Collaboration functions so your group can get better at authoring stuff
+  - multiple users editing the same document
+  - a chat for discourse
+  - a micro forum (?)
++ [ ] Share your data
+  - Import and Export your data
++ [ ] Offline first
+  - Make this app run completely local and offline
+  - Add an option to sync to remote
+
+
 
 ## Prerequisites
 You need the following software:
@@ -32,7 +47,7 @@ You need the following software:
 Then just do the following:
 
 `
-npm install && npm run init
+npm install
 `
 
 That should be enough to get the development version working.
