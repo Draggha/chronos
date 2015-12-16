@@ -1,46 +1,57 @@
 module.exports = function (config) {
-   config.set({
+  config.set({
 
-      // base path, that will be used to resolve files and exclude
-      basePath: '../../www',
+    // base path, that will be used to resolve files and exclude
+    basePath: '../..',
 
-      // frameworks to use
-      frameworks: ['jasmine'],
+    // frameworks to use
+    frameworks: ['jspm', 'jasmine'],
 
-      // list of files / patterns to load in the browser
-      files: [
-         'http://localhost:4200/js/libs.js',
-         'http://localhost:4200/js/app.js',
-         'http://localhost:4200/js/stubs.js',
-         '../src/tests/unit/**/*.test.js'
+    // list of files / patterns to load in the browser
+    /*
+     files: [
+     'http://localhost:4200/js/libs.js',
+     'http://localhost:4200/js/app.js',
+     'http://localhost:4200/js/stubs.js',
+     '../src/tests/unit/ ** / *.test.js
+     '
      ],
+     */
 
-      // list of files to exclude
-      exclude: [],
+    jspm: {
+//      config: 'config.js',
+      packages: 'src/jspm_packages/',
+      loadFiles: ['src/js/app/**/*.js', 'src/jspm_packages/**/*.js', 'src/tests/unit/**/*.test.js']
+    },
 
-      // test results reporter to use
-      reporters: ['progress'],
+    // list of files to exclude
+    exclude: [],
 
-      // web server port
-      port: 9876,
+    // test results reporter to use
+    reporters: ['progress'],
 
-      // enable / disable colors in the output (reporters and logs)
-      colors: true,
+    // web server port
+    port: 9876,
 
-      // level of logging
-      logLevel: config.LOG_INFO,
+    // enable / disable colors in the output (reporters and logs)
+    colors: true,
 
-      // enable / disable watching file and executing tests whenever any file changes
-      autoWatch: true,
+    // level of logging
+    logLevel: config.LOG_INFO,
 
-      // Start these browsers
-      browsers: ['Chrome', 'Firefox', 'IE'],
+    // enable / disable watching file and executing tests whenever any file changes
+    autoWatch: true,
 
-      // If browser does not capture in given timeout [ms], kill it
-      captureTimeout: 60000,
+    // Start these browsers
+    browsers: [
+      'Firefox'/*, 'IE', 'Chrome'*/
+    ],
 
-      // Continuous Integration mode
-      // if true, it capture browsers, run tests and exit
-      singleRun: false
-   });
-};
+    // If browser does not capture in given timeout [ms], kill it
+    captureTimeout: 60000,
+
+    // Continuous Integration mode
+    // if true, it capture browsers, run tests and exit
+    singleRun: false
+  })
+}

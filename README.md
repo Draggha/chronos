@@ -39,10 +39,8 @@ The following features will be aspired (suggestions welcome!):
 You need the following software:
 
 + a Git client (duh)
-+ [Node.js](http://nodejs.org)
++ [Node.js v4.1+](http://nodejs.org)
 + [Apache CouchDB](http://couchdb.apache.org/)
-+ [Hoodie](http://hood.ie)
-+ [JSPM](http://jspm.io)
 
 Then just do the following:
 
@@ -50,4 +48,10 @@ Then just do the following:
 npm install
 `
 
-That should be enough to get the development version working.
+That should be enough to get the development version working. The just run it with:
+
+`
+npm start
+`
+
+And open the page which will be printed after "www:".

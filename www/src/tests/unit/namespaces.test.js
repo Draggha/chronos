@@ -1,11 +1,11 @@
 describe('Namespace', function () {
-   describe('window.App', function () {
-      it("should be defined", function () {
-         // Arrange
-         var App = window.App;
+  describe('window.App', function () {
+    it('should be defined', function () {
+      // Arrange
+      var App = window.App
 
-         // Assert
-         expect(App).toBeDefined();
-      });
-   });
-});
+      // Assert
+      expect(App).toBeDefined()
+    })
+  })
+})

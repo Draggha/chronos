@@ -13,7 +13,16 @@ import loginPage from './pages/login'
 import journalPage from './pages/journal'
 import createChroniclePage from './pages/create-chronicle'
 
-let addHeaderAndFooter = function (page) {
+/**
+ * @typedef {Object} IMithrilComponent
+ * @property {Object} [vm]
+ * @property {Function} controller
+ * @property {Function} view
+ */
+/**
+ * @param {IMithrilComponent} page A page component for mithril
+ */
+let addHeaderAndFooter = function addHeaderAndFooter(page) {
   return {
     view: function () {
       return m('.container.main-content', [

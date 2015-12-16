@@ -2,7 +2,7 @@
 
 import m from 'mithril'
 import hoodie from '../helper/hoodie'
-import Chronicle from'../models/chronicle'
+import Chronicle from '../models/chronicle'
 // register component
 import modalComponent from '../components/prompts/modal'
 
