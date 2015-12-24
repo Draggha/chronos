@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node node_modules/hoodie-server/bin/start",
     "test": "karma start www/src/tests/karma.conf.js",
-    "postinstall": "jspm install && cd www/src/jspm_packages/github/prosemirror/prosemirror@master/ && npm i babel && npm run dist && cd ../../../../../../",
+    "postinstall": "jspm install",
     "lint": "standard --format www/src/js/app/**/*.js"
   },
   "dependencies": {
