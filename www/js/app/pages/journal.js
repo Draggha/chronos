@@ -15,7 +15,7 @@ var journalPage = {
     }
 
     return m('div', [
-      m('h1', 'Welcome to the chronicle "' + ctrl.chronicle + '"'),
+      m('h1', `Welcome to the chronicle "${ctrl.chronicle}"`),
       m('.row', [
         m('.col-md-12', [
           m.component(editorComponent)

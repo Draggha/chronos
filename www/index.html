@@ -12,23 +12,31 @@
 </head>
 
 <body>
-<div id="js--main-content"></div>
+    <div id="js--main-content"></div>
 
-<script src="src/jspm_packages/github/components/jquery@2.1.0/jquery.min.js"></script>
-<!--script src="assets/vendor/jquery-2.1.0.min.js"></script-->
-<!--script src="assets/vendor/bootstrap/bootstrap.js"></script-->
-<!-- Load the dynamic version of hoodie.js that includes all the plugin code-->
-<script src="/_api/_files/hoodie.js"></script>
+    <script src="js/jspm_packages/system.js"></script>
+    <script src="config.js"></script>
 
-<!--script src="assets/vendor/hoodie.accountbar.bootstrap.js"></script-->
-<!--script src="assets/vendor/bootstrap.modalform.js"></script-->
+    <script>
+        System.import('jquery')
+    </script>
+    <script src="/_api/_files/hoodie.js"></script>
 
-<script src="src/jspm_packages/system.js"></script>
-<script src="config.js"></script>
-<script>
-    System.import('src/js/app/app.js');
-</script>
-<!--script async="async" src="src/js/app/app.js"></script-->
+    <script>
+        System.import('js/app/app.js')
+    </script>
+
+
+    <!--script src="src/jspm_packages/github/components/jquery@2.1.0/jquery.min.js"></script-->
+    <!--script src="assets/vendor/jquery-2.1.0.min.js"></script-->
+    <!--script src="assets/vendor/bootstrap/bootstrap.js"></script-->
+    <!-- Load the dynamic version of hoodie.js that includes all the plugin code-->
+    <!--script src="/_api/_files/hoodie.js"></script-->
+
+    <!--script src="assets/vendor/hoodie.accountbar.bootstrap.js"></script-->
+    <!--script src="assets/vendor/bootstrap.modalform.js"></script-->
+
+    <!--script async="async" src="src/js/app/app.js"></script-->
 </body>
 
 </html>

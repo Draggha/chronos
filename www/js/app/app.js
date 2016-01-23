@@ -22,7 +22,7 @@ import createChroniclePage from './pages/create-chronicle'
 /**
  * @param {IMithrilComponent} page A page component for mithril
  */
-let addHeaderAndFooter = function addHeaderAndFooter(page) {
+let addHeaderAndFooter = function addHeaderAndFooter (page) {
   return {
     view: function () {
       return m('.container.main-content', [

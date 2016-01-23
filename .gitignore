@@ -1,6 +1,5 @@
 .idea/
 .vscode/
 node_modules/
-data/hoodie.pid
-data/couch.pid
-www/src/jspm_packages/
+data/
+www/js/jspm_packages/
