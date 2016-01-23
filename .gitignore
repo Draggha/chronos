@@ -3,3 +3,4 @@
 node_modules/
 data/
 www/js/jspm_packages/
+npm-debug.log
