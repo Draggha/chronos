@@ -19,7 +19,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.25",
     "core-js": "npm:core-js@1.2.1",
     "jquery": "github:components/jquery@2.1.0",
-    "markdown-editor-flavored": "npm:markdown-editor-flavored@2.5.5",
+    "markdown-it": "npm:markdown-it@5.1.0",
     "mithril": "npm:mithril@0.2.0",
     "prosemirror/prosemirror": "github:prosemirror/prosemirror@master",
     "rxjs-es": "npm:rxjs-es@5.0.0-beta.1",
@@ -37,6 +37,9 @@ System.config({
     "github:jspm/nodelibs-process@0.1.2": {
       "process": "npm:process@0.11.2"
     },
+    "github:jspm/nodelibs-punycode@0.1.0": {
+      "punycode": "npm:punycode@1.4.0"
+    },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
@@ -46,6 +49,15 @@ System.config({
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:argparse@1.0.4": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "lodash": "npm:lodash@4.0.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "sprintf-js": "npm:sprintf-js@1.0.3",
+      "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
@@ -66,18 +78,38 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:entities@1.1.1": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:markdown-editor-flavored@2.5.5": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+    "npm:linkify-it@1.2.0": {
+      "uc.micro": "npm:uc.micro@1.0.0"
+    },
+    "npm:lodash@4.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:markdown-it@5.1.0": {
+      "argparse": "npm:argparse@1.0.4",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "entities": "npm:entities@1.1.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "linkify-it": "npm:linkify-it@1.2.0",
+      "mdurl": "npm:mdurl@1.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "punycode": "github:jspm/nodelibs-punycode@0.1.0",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0",
+      "uc.micro": "npm:uc.micro@1.0.0"
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
+    },
+    "npm:punycode@1.4.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:tinymce@4.2.6": {
       "process": "github:jspm/nodelibs-process@0.1.2"

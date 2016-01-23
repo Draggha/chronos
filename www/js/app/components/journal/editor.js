@@ -1,58 +1,57 @@
 'use strict'
 
 import m from 'mithril'
-// Just import the library. It registers the desired object on the window object.
-// import TinyMCE from 'tinymce/tinymce.min' // eslint-disable-line no-unused-vars
-// import { nicEditor as NicEditor } from './nicedit/nicedit'
-import MarkdownEditor from 'markdown-editor-flavored/dist/markdown-editor.js'
-window.MARKDOWN_EDITOR_FLAVORED_STYLE_PATH = 'src/jspm_packes/npm/markdown-editor-flavored@2.5.5/dist';
+import MarkdownIt from 'markdown-it'
 
-function createEditor (editorId) {
-  /*
-  return function (element, isInitialized) {
-    if (!isInitialized) {
-      // the "tinymce" object is being registered on the global scope via the tinymce library
-      window.tinymce.init({
-        selector: `#${editorId}`,
-        theme_url: '/src/js/npm/jspm_packages/tinymce@4.2.6/themes/modern/theme.min.js',
-        inline: true
-      })
-    }
+let texteditorComponent = {}
+
+texteditorComponent.vm = (function () {
+  let vm = {}
+  let md = new MarkdownIt()
+
+  vm.inPreview = m.prop(false)
+  vm.editorText = function () {
+    return md.render(vm.editorSource())
   }
-  */
+  vm.editorSource = m.prop('')
 
-  /*
-    return function (element, isInitialized) {
-      if (!isInitialized) {
-        console.log(NicEditor)
+  return vm
+})()
 
-        new NicEditor({
-          fullPanel: true
-        }).panelInstance('js--journal-editor', {hasPanel: true})
-      }
-    }
-    */
+let editorRenderlet = function (vm) {
+  let editor
 
-  return function (element, isInitialized) {
-    if (!isInitialized) {
-      let editor = new MarkdownEditor('#js--journal-editor', {
-        // this is optional 
-        'width': '100%',
-        'margin': '5px'
-      })
-      editor.render()
-    }
+  if (!vm.inPreview()) {
+    editor = m('textarea', {
+      onchange: m.withAttr('value', vm.editorSource),
+      value: vm.editorSource()
+    })
+  } else {
+    editor = m('div', m.trust(vm.editorText()))
   }
+  return editor
 }
 
-let texteditorComponent = {
-  view: function (ctrl) {
-    let editorElementId = 'js--journal-editor'
-    return m('div.journal.shadow', {
-      id: editorElementId,
-      config: createEditor(editorElementId)
-    })
-  }
+texteditorComponent.view = function (ctrl) {
+  let vm = texteditorComponent.vm
+
+  return m('div.journal.shadow', {
+    id: 'js--journal-editor'
+  }, [
+    m('div', [
+      m('div', {
+        onclick: function (clickEvent) {
+          vm.inPreview(false)
+        }
+      }, 'Source'),
+      m('div', {
+        onclick: function (clickEvent) {
+          vm.inPreview(true)
+        }
+      }, 'Preview')
+    ]),
+    editorRenderlet(vm)
+  ])
 }
 
 export default texteditorComponent

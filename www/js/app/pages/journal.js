@@ -10,10 +10,10 @@ var journalPage = {
     this.chronicle = m.route.param('chronicle')
   },
   view: function (ctrl) {
-    if (!window.Chronos || !window.Chronos.chronicle) {
+/*    if (!window.Chronos || !window.Chronos.chronicle) {
       m.route('/403')
     }
-
+*/
     return m('div', [
       m('h1', `Welcome to the chronicle "${ctrl.chronicle}"`),
       m('.row', [

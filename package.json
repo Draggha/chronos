@@ -57,7 +57,7 @@
     "dependencies": {
       "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-beta.1",
       "jquery": "github:components/jquery@2.1.0",
-      "markdown-editor-flavored": "npm:markdown-editor-flavored@^2.5.5",
+      "markdown-it": "npm:markdown-it@^5.1.0",
       "mithril": "npm:mithril@^0.2.0",
       "prosemirror/prosemirror": "github:prosemirror/prosemirror@master",
       "rxjs-es": "npm:rxjs-es@^5.0.0-beta.1",
