@@ -1,85 +1,50 @@
 {
-  "name": "chronos",
-  "description": "A piece of time.",
-  "author": "Johann Haaf",
+  "name": "ember-chronos",
+  "version": "0.0.2",
+  "description": "A roleplay diary",
   "license": "MIT",
-  "private": true,
-  "version": "0.0.1",
-  "type": "app",
-  "scripts": {
-    "start": "node node_modules/hoodie-server/bin/start",
-    "test": "karma start www/src/tests/karma.conf.js",
-    "postinstall": "jspm install",
-    "lint": "standard --format www/src/js/app/**/*.js"
+  "author": "Johann Haaf",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
   },
-  "dependencies": {
-    "hoodie-plugin-appconfig": "^2.0.1",
-    "hoodie-plugin-email": "^1.0.0",
-    "hoodie-plugin-users": "^2.1.0",
-    "hoodie-server": "^4.0.3"
+  "repository": "https://github.com/Draggha/chronos",
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember test",
+    "start-hoodie": "hoodie",
+    "init": "npm i && bower install"
   },
   "devDependencies": {
-    "babel-eslint": "^4.1.3",
-    "eslint": "^1.6.0",
-    "eslint-config-standard": "^4.4.0",
-    "eslint-plugin-standard": "^1.3.1",
-    "grunt": "^0.4.5",
-    "grunt-concurrent": "^2.0.3",
-    "jasmine": "^2.3.2",
-    "jspm": "^0.16.12",
-    "jss": "^2.3.5",
-    "karma": "^0.13.11",
-    "karma-chrome-launcher": "^0.2.1",
-    "karma-firefox-launcher": "^0.1.6",
-    "karma-ie-launcher": "^0.2.0",
-    "karma-jasmine": "^0.3.6",
-    "karma-jspm": "^2.0.1",
-    "standard": "^5.3.1"
+    "broccoli-asset-rev": "^2.4.5",
+    "ember-ajax": "^2.4.1",
+    "ember-cli": "2.10.0",
+    "ember-cli-app-version": "^2.0.0",
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-dependency-checker": "^1.3.0",
+    "ember-cli-eslint": "3.0.0",
+    "ember-cli-htmlbars": "^1.0.10",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.3",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-qunit": "^3.0.1",
+    "ember-cli-release": "^0.2.9",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-test-loader": "^1.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-data": "^2.10.0",
+    "ember-export-application-global": "^1.0.5",
+    "ember-load-initializers": "^0.5.1",
+    "ember-resolver": "^2.0.3",
+    "ember-welcome-page": "^1.0.3",
+    "loader.js": "^4.0.10",
+    "standard": "^8.6.0"
   },
   "engines": {
-    "node": ">=0.10.22"
+    "node": ">= 0.12.0"
   },
-  "hoodie": {
-    "plugins": [
-      "hoodie-plugin-appconfig",
-      "hoodie-plugin-email",
-      "hoodie-plugin-users"
-    ]
-  },
-  "_shasum": "2cff3f5f59e47bc458dd4eb54d68dd6ad52bf4a0",
-  "_resolved": "https://registry.npmjs.org/my-first-hoodie/-/my-first-hoodie-3.0.0.tgz",
-  "readme": "README.md",
-  "jspm": {
-    "directories": {
-      "baseURL": "www",
-      "packages": "www/js/jspm_packages"
-    },
-    "dependencies": {
-      "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-beta.1",
-      "jquery": "github:components/jquery@2.1.0",
-      "markdown-it": "npm:markdown-it@^5.1.0",
-      "mithril": "npm:mithril@^0.2.0",
-      "prosemirror/prosemirror": "github:prosemirror/prosemirror@master",
-      "rxjs-es": "npm:rxjs-es@^5.0.0-beta.1",
-      "skeleton": "github:dhg/Skeleton@2.0.2",
-      "tinymce": "npm:tinymce@^4.2.6"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
-    }
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "globals": [
-      "Hoodie"
-    ],
-    "ignore": [
-      "node_modules/",
-      "www/src/jspm_packages/",
-      "www/config.js",
-      "www/src/js/vendor/"
-    ]
+  "private": true,
+  "dependencies": {
+    "ember-hoodie": "^2.2.3"
   }
 }

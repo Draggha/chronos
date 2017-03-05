@@ -1,6 +1,21 @@
-.idea/
-.vscode/
-node_modules/
-data/
-www/js/jspm_packages/
-npm-debug.log
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+/typings
+
+# misc
+/.vscode
+/.idea
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log*
+testem.log
+
+# data
+/.hoodie
